@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Math Website</title>
+  <!-- Boot Strap css -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <!-- our css link -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- our fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Abel|Fredoka+One|Passion+One:400,700,900|Roboto+Condensed|Roboto:400,500,700,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Arvo:700|Montserrat|Patrick+Hand&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <nav class="navbar-expand-lg main-navbar navbar navbar-expand-lg ">
+    <a style="margin-left: 3%;" class="navbar-brand text-light" href="#">Math2Science</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+      <ul class="navbar-nav ml-auto text-light">
+        <li class="main-navbar-item1 nav-item" onclick="homeClick()"><a class="nav-link">Home</a></li>
+        <li class="main-navbar-item3 nav-item" onclick="formulasClick()"><a class="nav-link">Formulas</a></li>
+        <li class="main-navbar-item4 nav-item" onclick="periodicTableClick()"><a class="nav-link">Periodic Table</a></li>
+        <li class="main-navbar-item2 nav-item" onclick="calculatorClick()"><a class="nav-link">Calculator</a></li>
+        <li class="main-navbar-item5 nav-item" onclick="questionsClick()"><a class="nav-link">Trivia</a></li>
+        <li class="main-navbar-item6 nav-item " onclick="aboutMeClick()"><a class="nav-link">About Me</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <section id="home">
+    <h3 style="font-family: 'Roboto', sans-serif;text-align: center;color: white;font-weight: 400;margin-top:7%;">Welcome to</h3>
+      <h1 style="margin-top: -0.5%;font-family: 'Fredoka One', cursive;font-size: 3.8rem;color: white;" class="home-title">Math2Science</h1>
+      <h4 style="font-family: 'Abel', sans-serif;font-size: 1.3rem;color:white;margin-top: 1%;">A website for everyone learn math & science</h4>
+      <div class="home-container">
+        <img class="home-image" src="home-image.png" alt="">
+        <p style="width:100%;padding: 2%;font-size: 1.1rem;color: white;font-family: 'Roboto Condensed', sans-serif;">This is a website to challenge all ages to learn math and science. There are countless resources that are provided to solve real
+          world problems. But to challenge everyone
+          there are a questions that are open to everyone to answer and get a chance to be on the leader board! </p>
+
+      </div>
+      <footer style="position:absolute; top:93%;">
+        <p style="margin-left: 520px;">Designed by Anish Pallod &copy;2020</p>
+      </footer>
+
+  </section>
+
+  <section id="calculator">
+    <div class="calculator">
+      <div class="calc-row">
+        <input style="" class="screen" type="" placeholder="" name="" value="" disabled>
+      </div>
+      <div class="calculator-container">
+        <div class="calc-row">
+          <button onclick="calculatorFunction(10)" class="button clear calcTop">(</button>
+          <button onclick="calculatorFunction(11)" class="button calcTop">)</button>
+          <button onclick="calculatorFunction(17)" class="button plus-minus calcTop">C</button>
+          <button onclick="calculatorFunction(12)" class="button multiply calcOperation">*</button>
+          <!--<div class="button backspace">delete</div> -->
+        </div>
+
+        <div class="calc-row">
+          <button onclick="calculatorFunction(1)" class="button">1</button>
+          <button onclick="calculatorFunction(2)" class="button">2</button>
+          <button onclick="calculatorFunction(3)" class="button">3</button>
+          <button onclick="calculatorFunction(15)" class="button divide calcOperation">/</button>
+          <!--<div class="button root">sqrt</div>-->
+        </div>
+
+        <div class="calc-row">
+          <button onclick="calculatorFunction(4)" class="button">4</button>
+          <button onclick="calculatorFunction(5)" class="button">5</button>
+          <button onclick="calculatorFunction(6)" class="button">6</button>
+          <button onclick="calculatorFunction(13)" class="button calcOperation">-</button>
+        </div>
+
+        <div class="calc-row">
+          <button onclick="calculatorFunction(7)" class="button">7</button>
+          <button onclick="calculatorFunction(8)" class="button">8</button>
+          <button onclick="calculatorFunction(9)" class="button">9</button>
+          <button onclick="calculatorFunction(14)" class="button calcOperation">+</button>
+          <!--<div class="button pi">pi</div>-->
+        </div>
+
+        <div class="calc-row">
+          <button onclick="calculatorFunction(0)" class="button zero">0</button>
+          <button onclick="calculatorFunction(.)" class="button decimal">.</button>
+          <button onclick="calculatorFunction(16)" class="button equal calcOperation">=</button>
+          <!--<div class="button Cpower">^</div>-->
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="formulas">
+    <nav class="side-navbar navbar navbar-expand-lg navbar-dark">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <ul class="side-navlist navbar-nav nav-fill w-100">
+          <!-- conversion dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle areaPermeterVolume" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              conversion
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" onclick="lengthClick()">Length</a>
+              <a class="dropdown-item" onclick="massClick()" href="#">Mass</a>
+              <a class="dropdown-item" onclick="volumeClick()" href="#">Volume</a>
+            </div>
+          </li>
+          <!-- Area perimeter drop down -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle areaPermeterVolume" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Area/Perimeter/Volume
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" onclick="rectangleClick()">Rectangle</a>
+              <a class="dropdown-item" onclick="circleClick()" href="#">Circle</a>
+              <a class="dropdown-item" onclick="trapezoidClick()" href="#">trapezoid</a>
+              <a class="dropdown-item" onclick="rectangularPrismClick()" href="#">Rectangular Prism</a>
+              <a class="dropdown-item" onclick="cylinderClick()" href="#">Cylinder</a>
+              <a class="dropdown-item" onclick="coneClick()" href="#">Cone</a>
+              <a class="dropdown-item" onclick="sphereClick()" href="#">Sphere</a>
+            </div>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle areaPermeterVolume" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Constants
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" onclick="ArchConstClick()" href="#">Archimedes' Constant</a>
+              <a class="dropdown-item" onclick="EulerConstClick()" href="#">Euler's Number</a>
+              <a class="dropdown-item" onclick="GoldenRatioClick()" href="#">The Golden Ratio</a>
+              <a class="dropdown-item" onclick="AvogadroConstClick()" href="#">Avogadro's Constant</a>
+            </div>
+          </li>
+          <li class="side-navbar-item nav-item" onclick="quadraticsClick()"><a class="nav-link quadratics">Quadratics</a></li>
+        </ul>
+      </div>
+    </nav>
+
+
+    <div class="length-section">
+
+      <div style="width:20%; height: 66px;position: absolute;left:20%;top: 30%;" class="length-container1">
+        <input style="float:right;width:100%; height: 100%;" type="number" name="" value="" class="length-input">
+        <select style="width:100%;height: 50%;" class="length-select1" name="">
+          <option value="1">inches</option>
+          <option value="2">feet</option>
+          <option value="3">yards</option>
+          <option value="4">miles</option>
+          <option value="5">centimeter</option>
+          <option value="6">meter</option>
+          <option value="7">kilometer</option>
+        </select>
+      </div>
+
+      <div style="width:20%; height: 66px;position: absolute;left:45%;top: 30%;" class="length-container2">
+        <input style="float:right;width:100%; height: 100%;" type="" name="" value="" class="length-output" disabled>
+        <select style="width:100%;height: 50%;" class="length-select2" name="">
+          <option value="1">inches</option>
+          <option value="2">feet</option>
+          <option value="3">yards</option>
+          <option value="4">miles</option>
+          <option value="5">centimeter</option>
+          <option value="6">meter</option>
+          <option value="7">kilometer</option>
+        </select>
+      </div>
+      <h1 style="position: absolute; left: 41%; top: 30%;color:white;">=</h1>
+      <button style="position: absolute;right: 22%;top: 33%;height:10%;width:10%;" type="button" onclick="lengthEnter()" class="btn btn-outline-light">Enter</button>
+    </div>
+
+    <div class="mass-section">
+
+
+      <div style="width:20%; height: 66px;position: absolute;left:20%;top: 30%;" class="mass-container1">
+        <input style="float:right;width:100%; height: 100%;" type="number" name="" value="" class="mass-input">
+        <select style="width:100%;height: 50%;" class="mass-select1" name="">
+          <option value="1">ounce</option>
+          <option value="2">pound</option>
+          <option value="3">gram</option>
+          <option value="4">US ton</option>
+          <option value="5">kilogram</option>
+        </select>
+      </div>
+
+      <div style="width:20%; height: 66px;position: absolute;left:45%;top: 30%;" class="mass-container2">
+        <input style="float:right;width:100%; height: 100%;" type="" name="" value="" class="mass-output" disabled>
+        <select style="width:100%;height: 50%;" class="mass-select2" name="">
+          <option value="1">ounce</option>
+          <option value="2">pound</option>
+          <option value="3">gram</option>
+          <option value="4">US ton</option>
+          <option value="5">kilogram</option>
+        </select>
+      </div>
+      <h1 style="position: absolute; left: 41%; top: 30%;color:white;">=</h1>
+      <button style="position: absolute;right: 22%;top: 33%;height:10%;width:10%;" type="button" onclick="massEnter()" class="btn btn-outline-light">Enter</button>
+    </div>
+
+
+
+    <div class="volume-section">
+
+
+      <div style="width:20%; height: 66px;position: absolute;left:20%;top: 30%;" class="volume-container1">
+        <input style="float:right;width:100%; height: 100%;" type="number" name="" value="" class="volume-input">
+        <select style="width:100%;height: 50%;" class="volume-select1" name="">
+          <option value="1">US liquid gallon</option>
+          <option value="2">US liquid quart</option>
+          <option value="3">US liquid pint</option>
+          <option value="4">US legal cup</option>
+          <option value="5">US fluid ounce</option>
+          <option value="6">US tablespoon</option>
+          <option value="7">US teaspoon</option>
+          <option value="8">Cubic meter</option>
+          <option value="9">Liter</option>
+          <option value="10">Milliliter</option>
+          <option value="11">Cubic foot</option>
+          <option value="12">Cubic inch</option>
+        </select>
+      </div>
+
+      <div style="width:20%; height: 66px;position: absolute;left:45%;top: 30%;" class="volume-container2">
+        <input style="float:right;width:100%; height: 100%;" type="" name="" value="" class="volume-output" disabled>
+        <select style="width:100%;height: 50%;" class="volume-select2" name="">
+          <option value="1">US liquid gallon</option>
+          <option value="2">US liquid quart</option>
+          <option value="3">US liquid pint</option>
+          <option value="4">US legal cup</option>
+          <option value="5">US fluid ounce</option>
+          <option value="6">US tablespoon</option>
+          <option value="7">US teaspoon</option>
+          <option value="8">Cubic meter</option>
+          <option value="9">Liter</option>
+          <option value="10">Milliliter</option>
+          <option value="11">Cubic foot</option>
+          <option value="12">Cubic inch</option>
+        </select>
+      </div>
+      <h1 style="position: absolute; left: 41%; top: 30%;color:white;">=</h1>
+      <button style="position: absolute;right: 22%;top: 33%;height:10%;width:10%;" type="button" onclick="volumeEnter()" class="btn btn-outline-light">Enter</button>
+    </div>
+
+
+    <div class="ArchConst-section">
+      <h2 style="margin-top:5%;font-size:2rem;">Archemedes Constant</h3>
+        <h5 style="margin-top:2%;">Value: &pi; or ~3.1415926535</h4>
+          <p style="width:60%;margin: 4% auto;">Archemedes' constant also known as pi or &pi; is an irrational number named after and created by Archimedes of Syracuse. Archimedes was a Greek astronomer, inventor, engineer, and mathematician.
+            Archemedes' constant is calculated by taking the circumference of any circle and dividing it by the radius. This results in an irrational value of around ~3.1415926535. Pi is essential for circle calculations. </p>
+    </div>
+    <div class="EulerConst-section">
+      <h2 style="margin-top:5%;font-size:2rem;">Euler's Number</h3>
+        <h5 style="margin-top:2%;">Value: e or ~2.71828</h4>
+          <p style="width:60%;margin: 4% auto;">Euler's Number also refered to as e is widely regarded as one of the most important number in math. Named after and descovered by Leonhard Euler, Euler's Number is irrational and has a value of around
+            ~2.71828. Euler's Number is found in
+            various areas of mathematics including natural logerithms and the study of compound interest. </p>
+    </div>
+    <div class="GoldenRatio-section">
+      <h2 style="margin-top:5%;font-size:2rem;">The Golden Ratio</h3>
+        <h5 style="margin-top:2%;">Value: 1.618:1</h4>
+          <p style="width:60%;margin: 4% auto;">The Golden Ratio is found in nature and is derived from the Fibbonacci Sequence(starting with 0 and 1 the addition of the last 2 numbers being the next). The golden ratio has a value of 1.618/1 and is
+            prevalant in architecture by providing a
+            sence of balance. Also many spirals found in nature come from the golden ratio. </p>
+    </div>
+    <div class="AvogadroConst-section">
+      <h2 style="margin-top:5%;font-size:2rem;">Avogadro's Constant</h3>
+        <h5 style="margin-top:2%;"> Value: N<sub>A</sub> or 6.02214086 × 10<sup>23</sup> mol<sup>-1</sup></h4>
+          <p style="width:60%;margin: 4% auto;">Avogadro's Constant is a also known as N<sub>A</sub> and by definition has a value of 6.02214086 × 10<sup>23</sup> mol<sup>-1</sup>. Named after Amedeo Avogadro, Avogadro's Constant is derived from
+            finding the number of atoms in 12 grams of carbon. It
+            is used in various areas of science including chemistry.</p>
+    </div>
+
+    <div class="quadratics-section" style="">
+      <h2 style="margin-top: 3%;">Quadratic Solver</h3>
+      <p style="width:52%;margin-left: auto;margin-right: auto;margin-left: auto;margin-right: auto;position:relative;top:280px;">The formula for the quadratic equation is: ax<sup>2</sup> + bx + c = 0. This calculator is able to calculate the x
+        intercepts of the quadratic equation. Input the values a b and c.</p>
+      <div style="position: absolute; left:3%;"class="">
+        <input style="width:10%;height:40px;margin: 4%;font-size: 2rem" class="quadraticA" placeholder="a" type="number" name="" value="">
+        <input style="width:10%;height:40px;margin: 4%;font-size: 2rem" class="quadraticB" placeholder="b" type="number" name="" value="">
+        <input style="width:10%;height:40px;margin: 4%;font-size: 2rem" class="quadraticC" placeholder="c" type="number" name="" value="">
+        <h5 style="position:absolute;left:41%;top:25%;">2</h5>
+        <h2 style="position:absolute;left:38%;top:8%;">x +</h2>
+        <h2 style="position:absolute;left:56%;top:8%;">x + </h2>
+        <h2 style="position:absolute;left:75%;top:8%;">= 0 </h2>
+      </div>
+
+      <textarea style="margin-top:10%;width:50%;" placeholder="Solution:" class="quadraticAnswer" name="name" disabled></textarea>
+      <button style="position:absolute;top: 47.5%;left:76%;height:50px;width:100px;"onclick="quadraticEnter()" type="button" class="btn btn-outline-light">Enter</button>
+
+    </div>
+
+    <div class="rectangle-section">
+      <h2>Rectangle</h2>
+      <div class="row">
+        <div class="col-lg-6">
+          <table class="rectangle-table">
+            <tr>
+              <td>Length(L)</td>
+              <td><input class="rectangle-length" type="number" placeholder="enter length" name="" value=""></td>
+            </tr>
+            <tr>
+              <td>Width(W)</td>
+              <td><input class="rectangle-width" type="number" placeholder="enter width" name="" value=""></td>
+            </tr>
+            <tr>
+              <td>Area(A)</td>
+              <td><input class="rectangle-area" type="" placeholder="Area = L &times; W" name="" value="" disabled></td>
+            </tr>
+            <tr>
+              <td>Perimeter(P)</td>
+              <td><input class="rectangle-perimeter" type="" placeholder="Perimeter = 2(L + W)" name="" value="" disabled></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><button class="btn btn-primary" style="width: 40%;" onclick="rectangleCalc()">enter</button></td>
+            </tr>
+          </table>
+        </div>
+        <div class="col-lg-6">
+          <img class="rectangle-image" src="rectangle-image.png" alt="">
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <h3 style="margin-left:20%;">Formulas</h3>
+          <p style="width: 70%; margin-left: auto; margin-right: auto;font-size: 1.2rem;margin-left:25%;">The formula for perimeter is: <strong><em>2(l + w)</em></strong> or <br><strong><em>2 &times; L + 2 &times;W</em></strong> . The formula for
+            area is <strong><em>L &times; W</em></strong>.</p>
+        </div>
+        <div class="col-lg-6">
+          <h3 style="margin-right:15%;">
+            What is a Rectangle?
+          </h3>
+          <p class="what-rectangle-p">A plane figure with four straight sides and four right angles, especially one with unequal adjacent sides, in contrast to a square.-Oxford Dictionary</p>
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+    <!-- circle section -->
+    <div class="circle-section">
+      <h2>Circle</h2>
+      <div class="row">
+        <div class="col-lg-6">
+          <table class="circle-table">
+            <tr>
+              <td>radius(r)</td>
+              <td><input class="circle-radius" type="number" placeholder="enter radius" name="" value=""></td>
+            </tr>
+            <tr>
+              <td>Area(A)</td>
+              <td><input class="circle-area" type="" placeholder="Area = &#120529;r&#178;" name="" value="" disabled></td>
+            </tr>
+            <tr>
+              <td>circumference(C)</td>
+              <td><input class="circle-circumference" type="" placeholder="C = 2&#120529;r" name="" value="" disabled></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><button class="btn btn-primary" style="width: 40%;" onclick="circleCalc()">enter</button></td>
+            </tr>
+          </table>
+        </div>
+        <div class="col-lg-6">
+          <img class="circle-image" src="circle-image.png" alt="">
+        </div>
+
+      </div>
+
+
+      <div class="row">
+        <div class="col-lg-6">
+          <h3 style="margin-left:20%;">Formulas</h3>
+          <p style="width: 70%; margin-left: auto; margin-right: auto;font-size: 1.2rem;margin-left:25%;">The formula for circumference is: <strong><em>2&#120529;r</em></strong> . The formula for area is: <strong><em>&#120529;r&#178;</em></strong>.
+          </p>
+        </div>
+        <div class="col-lg-6">
+          <h3 style="margin-right:15%;">
+            What is a Circle?
+          </h3>
+          <p class="what-rectangle-p">a round plane figure whose boundary (the circumference) consists of points equidistant from a fixed point (the center).-Oxford Dictionary</p>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="trapezoid-section">
+
+      <h2>trapezoid</h2>
+      <div class="row">
+        <div class="col-lg-6">
+          <table class="rectangle-table">
+            <tr>
+              <td>base one(a)</td>
+              <td><input class="trapezoid-b1" type="number" placeholder="enter base 1" name="" value=""></td>
+            </tr>
+            <tr>
+              <td>base two(b)</td>
+              <td><input class="trapezoid-b2" type="number" placeholder="enter base 2" name="" value=""></td>
+            </tr>
+            <tr>
+              <td>height(h)</td>
+              <td><input class="trapezoid-height" type="number" placeholder="enter height" name="" value=""></td>
+            </tr>
+            <tr>
+              <td>Area(A)</td>
+              <td><input class="trapezoid-area" type="" placeholder="A = &#189; &times; (a + b) &times; h" name="" value="" disabled></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><button class="btn btn-primary" style="width: 40%;" onclick="trapezoidCalc()">enter</button></td>
+            </tr>
+          </table>
+        </div>
+        <div class="col-lg-6">
+          <img class="trapezoid-image" src="trapezoid-image.png" alt="">
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <h3 style="margin-left:20%;">Formulas</h3>
+          <p style="width: 70%; margin-left: auto; margin-right: auto;font-size: 1.2rem;margin-left:25%;">The formula for area is: <br><strong><em>&#189;(base1 + base2)h</em></strong></p>
+        </div>
+        <div class="col-lg-6">
+          <h3 style="margin-right:15%;">
+            What is a Trapezoid?
+          </h3>
+          <p class="what-rectangle-p">A quadrilateral with only one pair of parallel sides.-Oxford Dictionary</p>
+        </div>
+
+      </div>
+
+    </div>
+    <div class="rectangularprism-section">
+      <h2>Rectangle Prism</h2>
+      <div class="row">
+        <div class="col-lg-6">
+          <table class="rectangle-table">
+            <tr>
+              <td>Length(L)</td>
+              <td><input class="rectangleprism-length" type="number" placeholder="enter length" name="" value=""></td>
+            </tr>
+            <tr>
+              <td>Width(W)</td>
+              <td><input class="rectangleprism-width" type="number" placeholder="enter width" name="" value=""></td>
+            </tr>
+            <tr>
+              <td>Height(H)</td>
+              <td><input class="rectangleprism-height" type="number" placeholder="enter height" name="" value=""></td>
+            </tr>
+            <tr>
+              <td>Volume(V)</td>
+              <td><input class="rectangleprism-volume" type="" placeholder="Volume = l &times; w &times; h" name="" value="" disabled></td>
+            </tr>
+            <tr>
+              <td>Surface Area(S)</td>
+              <td><input class="rectangleprism-surfaceArea" type="" placeholder="(2 &times; l &times; w)+(2 &times; l &times; h)+(2 &times; w &times; h)" name="" value="" disabled></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><button class="btn btn-primary" style="width: 40%;" onclick="rectangleprismCalc()">enter</button></td>
+            </tr>
+          </table>
+        </div>
+        <div class="col-lg-6">
+          <img class="rectangle-image" src="rectangularprism-image.png" alt="">
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <h3 style="margin-left:20%;">Formulas</h3>
+          <p style="width: 70%; margin-left: auto; margin-right: auto;font-size: 1.2rem;margin-left:25%;">The formula for surface area is: <strong><em>Surface Area = (2 &times; l &times; w)+(2 &times; l &times; h)+(2 &times; w &times;
+                h)</em></strong> . The formula for
+            volume is <strong><em>Volume = l &times; w &times; h</em></strong>.</p>
+        </div>
+        <div class="col-lg-6">
+          <h3 style="margin-right:15%;">
+            What is a Rectangular Prism?
+          </h3>
+          <p class="what-rectangle-p">A three dimentional figure that has has six rectangular shaped sides.</p>
+        </div>
+
+      </div>
+    </div>
+    <div class="cylinder-section">
+      <h2>Cylinder</h2>
+      <div class="row">
+        <div class="col-lg-6">
+          <table class="circle-table">
+            <tr>
+              <td>radius(r)</td>
+              <td><input class="cylinder-radius" type="number" placeholder="enter radius" name="" value=""></td>
+            </tr>
+            <tr>
+              <td>height(h)</td>
+              <td><input class="cylinder-height" type="number" placeholder="enter height" name="" value=""></td>
+            </tr>
+            <tr>
+              <td>Volume(V)</td>
+              <td><input class="cylinder-volume" type="" placeholder="Volume = &#120529;r&#178; &times; h" name="" value="" disabled></td>
+            </tr>
+            <tr>
+              <td>Surface area(C)</td>
+              <td><input class="cylinder-surfaceArea" type="" placeholder="S = 2 &times; &#120529; &times; r &times; h + 2 &times; &#120529; &times; r&#178;" name="" value="" disabled></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><button class="btn btn-primary" style="width: 40%;" onclick="cylinderCalc()">enter</button></td>
+            </tr>
+          </table>
+        </div>
+        <div class="col-lg-6">
+          <img class="cylinder-image" src="cylinder-image.png" alt="">
+        </div>
+
+      </div>
+
+
+      <div class="row">
+        <div class="col-lg-6">
+          <h3 style="margin-left:20%;">Formulas</h3>
+          <p style="width: 70%; margin-left: auto; margin-right: auto;font-size: 1.2rem;margin-left:25%;">The formula for surface area is: <strong><em>Surface Area = 2 &times; &#120529; &times; r &times; h + 2 &times; &#120529; &times; r
+                &#178;</em></strong>. The formula for volume is: <strong>Volume = &#120529; r &#178; </strong>
+          </p>
+        </div>
+        <div class="col-lg-6">
+          <h3 style="margin-right:15%;">
+            What is a Cylinder?
+          </h3>
+          <p class="what-rectangle-p"> A solid geometric figure with straight parallel sides and a circular or oval cross section.-Oxford Dictionary</p>
+        </div>
+      </div>
+    </div>
+    <div class="cone-section">
+      <h2>Cone</h2>
+      <div class="row">
+        <div class="col-lg-6">
+          <table class="circle-table">
+            <tr>
+              <td>radius(r)</td>
+              <td><input class="cone-radius" type="number" placeholder="enter radius" name="" value=""></td>
+            </tr>
+            <tr>
+              <td>height(h)</td>
+              <td><input class="cone-height" type="number" placeholder="enter height" name="" value=""></td>
+            </tr>
+            <tr>
+              <td>Volume(V)</td>
+              <td><input class="cone-volume" type="" placeholder="Volume = &#120529; r &#178; &times; (h / 3)" name="" value="" disabled></td>
+            </tr>
+            <tr>
+              <td>Surface area(C)</td>
+              <td><input class="cone-surfaceArea" type="" placeholder="Surface Area = &#120529; &times; r &times; (r + &#8730;(h&#178; + r&#178;))" name="" value="" disabled></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><button class="btn btn-primary" style="width: 40%;" onclick="coneCalc()">enter</button></td>
+            </tr>
+          </table>
+        </div>
+        <div class="col-lg-6">
+          <img class="cone-image" src="cone-image.png" alt="">
+        </div>
+
+      </div>
+
+
+      <div class="row">
+        <div class="col-lg-6">
+          <h3 style="margin-left:20%;">Formulas</h3>
+          <p style="width: 70%; margin-left: auto; margin-right: auto;font-size: 1.2rem;margin-left:25%;">The formula for surface area is: <strong><em>Surface Area = &#120529; &times; r &times; (r + <bold>&#8730;</bold>(h&#178; +
+                r&#178;))</em></strong>. The formula for volume is: <strong>Volume = &#120529; r &#178; &times; (h / 3)</strong>
+          </p>
+        </div>
+        <div class="col-lg-6">
+          <h3 style="margin-right:15%;">
+            What is a Cone?
+          </h3>
+          <p class="what-rectangle-p"> A solid or hollow object which tapers from a circular or roughly circular base to a point.-Oxford Dictionary</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="sphere-section">
+      <h2>Sphere</h2>
+      <div class="row">
+        <div class="col-lg-6">
+          <table class="circle-table">
+            <tr>
+              <td>radius(r)</td>
+              <td><input class="sphere-radius" type="number" placeholder="enter radius" name="" value=""></td>
+            </tr>
+            <tr>
+              <td>Surface Area(S)</td>
+              <td><input class="sphere-surfaceArea" type="" placeholder="surface area = 4 &times; &#120529; r&#178;" name="" value="" disabled></td>
+            </tr>
+            <tr>
+              <td>Volume(V)</td>
+              <td><input class="sphere-volume" type="" placeholder="volume = (4/3) &times; &#120529; r&#179;" name="" value="" disabled></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><button class="btn btn-primary" style="width: 40%;" onclick="sphereCalc()">enter</button></td>
+            </tr>
+          </table>
+        </div>
+        <div class="col-lg-6">
+          <img class="sphere-image" src="sphere-image.png" alt="">
+        </div>
+
+      </div>
+
+
+      <div class="row">
+        <div class="col-lg-6">
+          <h3 style="margin-left:20%;">Formulas</h3>
+          <p style="width: 70%; margin-left: auto; margin-right: auto;font-size: 1.2rem;margin-left:25%;">The formula for surface area is: <strong><em>surface area = 4 &times; &#120529; r&#178;</em></strong> . The formula for volume is:
+            <br><strong><em> volume = (4/3) &times; &#120529; r&#179;</em></strong>.
+          </p>
+        </div>
+        <div class="col-lg-6">
+          <h3 style="margin-right:15%;">
+            What is a Sphere?
+          </h3>
+          <p class="what-rectangle-p">a round solid figure, or its surface, with every point on its surface equidistant from its center.-Oxford Dictionary</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="periodic-table">
+    <h1>The Periodic Table</h1>
+    <center>
+      <table class="periodic-table">
+        <tr class="periodic-table-rows">
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(1)" onmouseout="noHoverPeriodicElement()" class="periodic-table-button other-nonmetal hydrogen">1<br>H</button></td>
+          <td class="buffer-space"></td>
+          <td class="buffer-space"></td>
+          <td class="buffer-space"></td>
+          <td class="buffer-space"></td>
+          <td class="buffer-space"></td>
+          <td class="buffer-space"></td>
+          <td class="buffer-space"></td>
+          <td class="buffer-space"></td>
+          <td class="buffer-space"></td>
+          <td class="buffer-space"></td>
+          <td class="buffer-space"></td>
+          <td class="buffer-space"></td>
+          <td class="buffer-space"></td>
+          <td class="buffer-space"></td>
+          <td class="buffer-space"></td>
+          <td class="buffer-space"></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(2)" class="periodic-table-button noble-gases helium">2<br>He</button></td>
+        </tr>
+        <tr class="periodic-table-rows">
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(3)" class="periodic-table-button alkali-metal li">3<br>Li</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(4)" class="periodic-table-button alkaline-earth-metal">4<br>Be</button></td>
+          <td class="buffer-space"></td>
+          <td class="buffer-space"></td>
+          <td class="buffer-space"></td>
+          <td class="buffer-space"></td>
+          <td class="buffer-space"></td>
+          <td class="buffer-space"></td>
+          <td class="buffer-space"></td>
+          <td class="buffer-space"></td>
+          <td class="buffer-space"></td>
+          <td class="buffer-space"></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(5)" class="periodic-table-button metalloids">5<br>B</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(6)" class="periodic-table-button other-nonmetal">6<br>C</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(7)" class="periodic-table-button other-nonmetal">7<br>N</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(8)" class="periodic-table-button other-nonmetal">8<br>O</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(9)" class="periodic-table-button other-nonmetal">9<br>F</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(10)" class="periodic-table-button noble-gases">10<br>Ne</button></td>
+        </tr>
+        <tr class="periodic-table-rows">
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(11)" class="periodic-table-button alkali-metal">11<br>Na</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(12)" class="periodic-table-button alkaline-earth-metal">12<br>Mg</button></td>
+          <td class="buffer-space"></td>
+          <td class="buffer-space"></td>
+          <td class="buffer-space"></td>
+          <td class="buffer-space"></td>
+          <td class="buffer-space"></td>
+          <td class="buffer-space"></td>
+          <td class="buffer-space"></td>
+          <td class="buffer-space"></td>
+          <td class="buffer-space"></td>
+          <td class="buffer-space"></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(13)" class="periodic-table-button post-transition-metal">13<br>AL</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(14)" class="periodic-table-button metalloids">14<br>Si</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(15)" class="periodic-table-button other-nonmetal">15<br>P</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(16)" class="periodic-table-button other-nonmetal">16<br>S</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(17)" class="periodic-table-button other-nonmetal">17<br>CL</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(18)" class="periodic-table-button noble-gases">18<br>Ar</button></td>
+        </tr>
+        <tr class="periodic-table-rows">
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(19)"class="periodic-table-button alkali-metal">19<br>K</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(20)"class="periodic-table-button alkaline-earth-metal">20<br>Ca</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(21)"class="periodic-table-button transition-metal">21<br>Sc</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(22)"class="periodic-table-button transition-metal">22<br>Ti</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(23)"class="periodic-table-button transition-metal">23<br>V</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(24)"class="periodic-table-button transition-metal">24<br>Cr</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(25)"class="periodic-table-button transition-metal">25<br>Mn</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(26)"class="periodic-table-button transition-metal">26<br>Fe</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(27)"class="periodic-table-button transition-metal">27<br>Co</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(28)"class="periodic-table-button transition-metal">28<br>Ni</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(29)"class="periodic-table-button transition-metal">29<br>Cu</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(30)"class="periodic-table-button transition-metal">30<br>Zn</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(31)"class="periodic-table-button post-transition-metal">31<br>Ga</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(32)"class="periodic-table-button metalloids">32<br>Ge</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(33)"class="periodic-table-button metalloids">33<br>As</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(34)"class="periodic-table-button other-nonmetal">34<br>Se</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(35)"class="periodic-table-button other-nonmetal">35<br>Br</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(36)"class="periodic-table-button noble-gases">36<br>Kr</button></td>
+        </tr>
+        <tr class="periodic-table-rows">
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(37)"class="periodic-table-button alkali-metal">37<br>Rb</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(38)"class="periodic-table-button alkaline-earth-metal">38<br>Sr</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(39)"class="periodic-table-button transition-metal">39<br>Y</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(40)"class="periodic-table-button transition-metal">40<br>Zr</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(41)"class="periodic-table-button transition-metal">41<br>Nb</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(42)"class="periodic-table-button transition-metal">42<br>Mo</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(43)"class="periodic-table-button transition-metal">43<br>Tc</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(44)"class="periodic-table-button transition-metal">44<br>Ru</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(45)"class="periodic-table-button transition-metal">45<br>Rh</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(46)"class="periodic-table-button transition-metal">46<br>Pd</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(47)"class="periodic-table-button transition-metal">47<br>Ag</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(48)"class="periodic-table-button transition-metal">48<br>Cd</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(49)"class="periodic-table-button post-transition-metal">49<br>In</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(50)"class="periodic-table-button post-transition-metal">50<br>Sn</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(51)"class="periodic-table-button metalloids">51<br>Sb</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(52)"class="periodic-table-button metalloids">52<br>Te</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(53)"class="periodic-table-button other-nonmetal">53<br>I</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(54)"class="periodic-table-button noble-gases">54<br>Xe</button></td>
+        </tr>
+        <tr class="periodic-table-rows">
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(55)"class="periodic-table-button alkali-metal">55<br>Cs</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(56)"class="periodic-table-button alkaline-earth-metal">56<br>Ba</button></td>
+          <td class="periodic-table-column"><button class="periodic-table-button lanthanides"><span style="font-size: 10.9px;">58-71</span><br>*</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(72)"class="periodic-table-button transition-metal">72<br>Hf</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(73)"class="periodic-table-button transition-metal">73<br>Ta</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(74)"class="periodic-table-button transition-metal">74<br>W</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(75)"class="periodic-table-button transition-metal">75<br>Re</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(76)"class="periodic-table-button transition-metal">76<br>Os</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(77)"class="periodic-table-button transition-metal">77<br>Ir</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(78)"class="periodic-table-button transition-metal">78<br>Pt</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(79)"class="periodic-table-button transition-metal">79<br>Au</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(80)"class="periodic-table-button transition-metal">80<br>Hg</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(81)"class="periodic-table-button post-transition-metal">81<br>TL</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(82)"class="periodic-table-button post-transition-metal">82<br>Pb</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(83)"class="periodic-table-button post-transition-metal">83<br>Bi</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(84)"class="periodic-table-button post-transition-metal">84<br>Po</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(85)"class="periodic-table-button metalloids">85<br>At</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(86)"class="periodic-table-button noble-gases">86<br>Rn</button></td>
+        </tr>
+        <tr class="periodic-table-rows">
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(87)"class="periodic-table-button alkali-metal">87<br>Fr</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(88)"class="periodic-table-button alkaline-earth-metal">88<br>Ra</button></td>
+          <td class="periodic-table-column"><button class="periodic-table-button actinides"><span style="font-size: 9px;">90-103</span><br>**</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(104)"class="periodic-table-button transition-metal">104<br>Rf</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(105)"class="periodic-table-button transition-metal">105<br>Db</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(106)"class="periodic-table-button transition-metal">106<br>Sg</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(107)"class="periodic-table-button transition-metal">107<br>Bh</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(108)"class="periodic-table-button transition-metal">108<br>Hs</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(109)"class="periodic-table-button">109<br>Mt</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(110)"class="periodic-table-button">110<br>Ds</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(111)"class="periodic-table-button">111<br>Rg</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(112)"class="periodic-table-button transition-metal">112<br>Cn</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(113)"class="periodic-table-button">113<br>Nh</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(114)"class="periodic-table-button post-transition-metal">114<br>FL</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(115)"class="periodic-table-button">115<br>Mc</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(116)"class="periodic-table-button">116<br>Lv</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(117)"class="periodic-table-button">117<br>Ts</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(118)"class="periodic-table-button">118<br>Og</button></td>
+        </tr>
+        <tr style="height:30px">
+          <td class="buffer-space"></td>
+          <td class="buffer-space"></td>
+          <td class="buffer-space"></td>
+          <td class="buffer-space"></td>
+          <td class="buffer-space"></td>
+          <td class="buffer-space"></td>
+          <td class="buffer-space"></td>
+          <td class="buffer-space"></td>
+          <td class="buffer-space"></td>
+          <td class="buffer-space"></td>
+          <td class="buffer-space"></td>
+          <td class="buffer-space"></td>
+          <td class="buffer-space"></td>
+          <td class="buffer-space"></td>
+          <td class="buffer-space"></td>
+          <td class="buffer-space"></td>
+          <td class="buffer-space"></td>
+          <td class="buffer-space"></td>
+        </tr>
+        <tr class="periodic-table-rows">
+          <td class="buffer-space"></td>
+          <td class="buffer-space"></td>
+          <td class="buffer-space"></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(58)"class="periodic-table-button lanthanides">58<br>Ce</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(59)"class="periodic-table-button lanthanides">59<br>Pr</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(60)"class="periodic-table-button lanthanides">60<br>Nd</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(61)"class="periodic-table-button lanthanides">61<br>Pm</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(62)"class="periodic-table-button lanthanides">62<br>Sm</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(63)"class="periodic-table-button lanthanides">63<br>Eu</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(64)"class="periodic-table-button lanthanides">64<br>Gd</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(65)"class="periodic-table-button lanthanides">65<br>Tb</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(66)"class="periodic-table-button lanthanides">66<br>Dy</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(67)"class="periodic-table-button lanthanides">67<br>Ho</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(68)"class="periodic-table-button lanthanides">68<br>Er</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(69)"class="periodic-table-button lanthanides">69<br>Tm</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(70)"class="periodic-table-button lanthanides">70<br>Yb</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(71)"class="periodic-table-button lanthanides">71<br>Lu</button></td>
+          <td class="buffer-space"></td>
+        </tr>
+        <tr class="periodic-table-rows">
+          <td class="buffer-space"></td>
+          <td class="buffer-space"></td>
+          <td class="buffer-space"></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(90)"class="periodic-table-button actinides">90<br>Th</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(91)"class="periodic-table-button actinides">91<br>Pa</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(92)"class="periodic-table-button actinides">92<br>U</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(93)"class="periodic-table-button actinides">93<br>Np</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(94)"class="periodic-table-button actinides">94<br>Pu</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(95)"class="periodic-table-button actinides">95<br>Am</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(96)"class="periodic-table-button actinides">96<br>Cm</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(97)"class="periodic-table-button actinides">97<br>Bk</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(98)"class="periodic-table-button actinides">98<br>Cf</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(99)"class="periodic-table-button actinides">99<br>Es</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(100)"class="periodic-table-button actinides">100<br>Fm</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(101)"class="periodic-table-button actinides">101<br>Md</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(102)"class="periodic-table-button actinides">102<br>No</button></td>
+          <td class="periodic-table-column"><button onmouseover="hoverPeriodicElement(103)"class="periodic-table-button actinides">103<br>Lr</button></td>
+          <td class="buffer-space"></td>
+        </tr>
+      </table>
+    <table class="element-periodic-data">
+        <tr>
+          <td class="periodic-data-td">Name</td>
+          <td class="periodic-data-td element-name"></td>
+        </tr>
+        <tr>
+          <td class="periodic-data-td">abbreviation</td>
+          <td class="periodic-data-td element-abr"></td>
+        </tr>
+        <tr>
+          <td class="periodic-data-td">number</td>
+          <td class="periodic-data-td element-number"></td>
+        </tr>
+        <tr>
+          <td class="periodic-data-td">atomic mass</td>
+          <td class="periodic-data-td element-mass"></td>
+        </tr>
+        <tr>
+          <td class="periodic-data-td">boiling point</td>
+          <td class="periodic-data-td element-boil"></td>
+        </tr>
+        <tr>
+          <td class="periodic-data-td">melting point</td>
+          <td class="periodic-data-td element-melt"></td>
+        </tr>
+      </table>
+    </center>
+
+  </section>
+
+  <section id="questions">
+    <title>Current Question</title>
+
+
+    <p class="trivia-question1" style=""></p>
+    <div class="home-container">
+      <img class="trivia-image" src="trivia-image.jpg" alt="">
+      <p style="width:80%;font-weight: bold;padding: 4%;margin-left:210px;">A soup company wants to know how much soup their customers are getting. If each soup can is a cylinder with a radius of 1.5 inches, has a hieght of 4 inches, and is filled
+        3/4 with soup what is the amount of soup in US liquid pints? Round your answer to the nearest pint. </p>
+    </div>
+    <div style="margin-top: -70px;" class="container">
+      <div class="row">
+        <div class="col-sm">
+          <h3>Answer</h3>
+          <form class="" action="mailto:pallodanish@gmail.com" method="post" enctype="text/plain">
+            <label for="">Your name:&nbsp;</label>
+            <input type="text" name="yourName" value=""><br><br>
+            <label for="">Your grade:&nbsp;</label>
+            <input type="text" name="yourGrade" value=""><br><br>
+            <label for="">Your email:&nbsp;&nbsp;</label>
+            <input type="email" name="yourEmail" value=""><br><br>
+            <label for="">Your answer:</label>
+            <input type="text" name="yourAnswer" value=""><br>
+            <input style="position: relative; top:3px;"type="submit" name="" class="btn-primary" value="submit">
+          </form>
+        </div>
+        <div class="col-sm">
+          <h3>Leaderboard</h3>
+          <table style="margin-left: 10%;position: relative; bottom:10px;">
+            <tr>
+              <td>1.</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>2.</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>3.</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>4.</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>5.</td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <td>6.</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>7.</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>8.</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>9.</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>10.</td>
+              <td></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="about-me">
+      <h2 style="margin-top:5%;">About Me</h2>
+<div style="position: relative;left:9%;width:91%;margin-top:5%;"class="aboutme-container">
+  <img style="width:18%;float: left;"src="aboutme-image.png" alt="">
+  <p style="width: 50%;margin: 0 auto;text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hi my name is Anish Pallod. I am a 6th grader at Springhouse Middle School. I love to code. I have a dream to engage kids of all ages to enjoy math and science. I have started to turn my aspirations into reality by creating this website. I want a clean interface in which everybody has the resources to learn math and science. I created this website using, html, css, and javascript. Each has its own perpose to improve my website. In total this website has around 4,500 lines of code.</p>
+</div>
+
+  </section>
+
+
+
+
+  <!-- bootstrap javascript -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  <!-- our javascript link -->
+  <script src="index.js" charset="utf-8"></script>
+</body>
+
+</html>

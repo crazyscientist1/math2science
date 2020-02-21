@@ -1,0 +1,584 @@
+/* get by tag */
+body {
+  text-align: center;
+  background-color: #2a6fc7;
+  color: white;
+}
+
+h1 {
+  color: white;
+  font-family: 'Patrick Hand', cursive;
+  font-size: 4rem;
+}
+
+h2 {
+  margin-top: 20px;
+  font-size: 3rem;
+  color: white;
+}
+
+input {
+  text-align: center;
+}
+
+p {
+  font-family: 'Montserrat';
+}
+
+/* get by id */
+/* get by class */
+.main-navbar{
+  background-color: #23b7c4;
+}
+
+.nav-item {
+  margin: 0 10px;
+}
+
+.home-title {
+  margin-top: 2%;
+}
+
+.invisible {
+  display: none;
+}
+
+.side-navbar-item {
+}
+
+.side-navbar {
+  height: 30px;
+  background-color: #3988bf;
+}
+
+.row {
+  margin-top: 3%;
+  margin-right: 6px;
+}
+
+.rectangle-length {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.1px;
+  width: 270px;
+  height: 40px;
+  background-color: #e4f9f5;
+  border-radius: 4px;
+  border: solid 0.5px black;
+}
+
+.rectangle-width {
+  margin-left: auto;
+  margin-right: auto;
+  width: 270px;
+  height: 40px;
+  background-color: #e4f9f5;
+  border-radius: 4px;
+  border: solid 0.5px black;
+}
+
+.rectangle-area {
+  margin-left: auto;
+  margin-right: auto;
+  width: 270px;
+  height: 40px;
+  background-color: #bbbbbb;
+  border-radius: 4px;
+  border: solid 0.5px black;
+}
+
+.rectangle-perimeter {
+  text-align: center;
+  width: 270px;
+  height: 40px;
+  background-color: #bbbbbb;
+  border: solid 0.5px black;
+  border-radius: 4px;
+}
+
+.trapezoid-area {
+  text-align: center;
+  width: 270px;
+  height: 40px;
+  background-color: #bbbbbb;
+  border: solid 0.5px black;
+  border-radius: 4px;
+}
+
+.circle-radius {
+  margin-left: auto;
+  margin-right: auto;
+  width: 270px;
+  height: 40px;
+  background-color: #e4f9f5;
+  border-radius: 4px;
+  border: solid 0.5px black;
+}
+
+.trapezoid-b1 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 270px;
+  height: 40px;
+  background-color: #e4f9f5;
+  border-radius: 4px;
+  border: solid 0.5px black;
+}
+
+.trapezoid-b2 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 270px;
+  height: 40px;
+  background-color: #e4f9f5;
+  border-radius: 4px;
+  border: solid 0.5px black;
+}
+
+.trapezoid-height {
+  margin-left: auto;
+  margin-right: auto;
+  width: 270px;
+  height: 40px;
+  background-color: #e4f9f5;
+  border-radius: 4px;
+  border: solid 0.5px black;
+}
+
+.circle-area {
+  margin-left: auto;
+  margin-right: auto;
+  width: 270px;
+  height: 40px;
+  background-color: #bbbbbb;
+  border-radius: 4px;
+  border: solid 0.5px black;
+}
+
+.circle-circumference {
+  text-align: center;
+  width: 270px;
+  height: 40px;
+  background-color: #bbbbbb;
+  border: solid 0.5px black;
+  border-radius: 4px;
+}
+
+.rectangleprism-volume {
+  text-align: center;
+  width: 270px;
+  height: 30px;
+  background-color: #bbbbbb;
+  border: solid 0.5px black;
+  border-radius: 4px;
+}
+
+.rectangleprism-surfaceArea {
+  text-align: center;
+  width: 270px;
+  height: 30px;
+  background-color: #bbbbbb;
+  border: solid 0.5px black;
+  border-radius: 4px;
+}
+
+.cylinder-volume {
+  text-align: center;
+  width: 270px;
+  height: 30px;
+  background-color: #bbbbbb;
+  border: solid 0.5px black;
+  border-radius: 4px;
+}
+
+.cylinder-surfaceArea {
+  text-align: center;
+  width: 270px;
+  height: 30px;
+  background-color: #bbbbbb;
+  border: solid 0.5px black;
+  border-radius: 4px;
+}
+
+.cone-surfaceArea {
+  text-align: center;
+  width: 270px;
+  height: 30px;
+  background-color: #bbbbbb;
+  border: solid 0.5px black;
+  border-radius: 4px;
+}
+
+.cone-volume {
+  text-align: center;
+  width: 270px;
+  height: 30px;
+  background-color: #bbbbbb;
+  border: solid 0.5px black;
+  border-radius: 4px;
+}
+
+.rectangleprism-width {
+  margin-left: auto;
+  margin-right: auto;
+  width: 270px;
+  height: 30px;
+  background-color: #e4f9f5;
+  border-radius: 4px;
+  border: solid 0.5px black;
+}
+
+.rectangleprism-length {
+  margin-left: auto;
+  margin-right: auto;
+  width: 270px;
+  height: 30px;
+  background-color: #e4f9f5;
+  border-radius: 4px;
+  border: solid 0.5px black;
+}
+
+.cone-radius {
+  margin-left: auto;
+  margin-right: auto;
+  width: 270px;
+  height: 30px;
+  background-color: #e4f9f5;
+  border-radius: 4px;
+  border: solid 0.5px black;
+}
+
+.cone-height {
+  margin-left: auto;
+  margin-right: auto;
+  width: 270px;
+  height: 30px;
+  background-color: #e4f9f5;
+  border-radius: 4px;
+  border: solid 0.5px black;
+}
+
+.rectangleprism-height {
+  margin-left: auto;
+  margin-right: auto;
+  width: 270px;
+  height: 30px;
+  background-color: #e4f9f5;
+  border-radius: 4px;
+  border: solid 0.5px black;
+}
+
+.cylinder-height {
+  margin-left: auto;
+  margin-right: auto;
+  width: 270px;
+  height: 30px;
+  background-color: #e4f9f5;
+  border-radius: 4px;
+  border: solid 0.5px black;
+}
+
+.cylinder-radius {
+  margin-left: auto;
+  margin-right: auto;
+  width: 270px;
+  height: 30px;
+  background-color: #e4f9f5;
+  border-radius: 4px;
+  border: solid 0.5px black;
+}
+
+.sphere-radius {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.1px;
+  width: 270px;
+  height: 40px;
+  background-color: #e4f9f5;
+  border-radius: 4px;
+  border: solid 0.5px black;
+}
+
+.sphere-surfaceArea {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.1px;
+  width: 270px;
+  height: 40px;
+  background-color: #BBBBBB;
+  border-radius: 4px;
+  border: solid 0.5px black;
+}
+
+.sphere-volume {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.1px;
+  width: 270px;
+  height: 40px;
+  background-color: #BBBBBB;
+  border-radius: 4px;
+  border: solid 0.5px black;
+}
+
+.rectangle-col {
+  padding: 2% 15%;
+}
+
+.rectangle-formulas {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.dropdown-menu {
+  position: absolute;
+  left: 0;
+}
+
+td {
+  padding-left: 30px;
+}
+
+.rectangle-table {
+  margin-left: 15%;
+}
+
+.circle-table {
+  margin-top: 5%;
+  margin-left: 15%;
+}
+
+.trapezoid-table {
+  margin-top: 5%;
+  margin-left: 15%;
+}
+
+.rectangle-image {
+  width: 40%;
+  margin-top: 3%;
+  margin-right: 15%;
+}
+
+.trapezoid-image {
+  width: 40%;
+  margin-top: 3%;
+  margin-right: 15%;
+}
+
+.circle-image {
+  width: 30%;
+  margin-top: 2%;
+  margin-right: 20%;
+}
+
+.cylinder-image {
+  width: 20%;
+  margin-top: 2%;
+  margin-right: 20%;
+}
+
+.cone-image {
+  width: 30%;
+  margin-right: 110px;
+  margin-top: 30px;
+}
+
+.what-rectangle-p {
+  width: 80%;
+  font-size: 1.1rem;
+}
+
+.sphere-image {
+  margin-right: 100px;
+}
+
+.periodic-table-button {
+  width: 40px;
+  height: 40px;
+  line-height: 120%;
+  border: none;
+
+}
+
+.periodic-table{
+  position: relative;
+  top: 40px;
+}
+
+
+
+.periodic-table-column{
+  padding-left: 1px;
+}
+
+.buffer-space {
+  width: 50px;
+  padding-left: 0px;
+}
+
+.alkali-metal {
+  background-color: #fa9134;
+}
+
+.alkaline-earth-metal {
+  background-color: #fffc54;
+}
+
+.lanthanides {
+  background-color: #f2a7fa;
+}
+
+.actinides {
+  background-color: #f5de98;
+}
+
+.transition-metal {
+  background-color: #10adb0;
+}
+
+.post-transition-metal {
+  background-color: #c7feff;
+}
+
+.metalloids {
+  background-color: #ff4d2e;
+}
+
+.other-nonmetal {
+  background-color: #00db0b;
+}
+
+.noble-gases {
+  background-color: #f12eff;
+}
+
+.periodic-data-td {
+  font-size: 13px;
+}
+
+.element-periodic-data {
+  position: absolute;
+  left: 440px;
+  top: 160px;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Droid+Sans+Mono|Pacifico|Oxygen);
+
+.calculator {
+  position: relative;
+  float: none;
+  margin: 6rem auto;
+  padding: 1em 0;
+  display: block;
+  height: 325px;
+  width: 400px;
+  background-color: #444;
+  border-radius: 25px;
+  font-weight: bold;
+  padding: 20px;
+}
+
+.calc-row input {
+  text-align: center;
+  display: inline-block;
+  font-size: 0.7rem;
+  border: none;
+  background-color: #7a7a7a;
+  padding: 10px 0;
+  margin: 7px 5px;
+  border-radius: 20px;
+  width: 40px;
+  height: 35px;
+  color: white;
+}
+
+.calc-row button {
+  text-align: center;
+  display: inline-block;
+  font-size: 0.7rem;
+  border: none;
+  background-color: #7a7a7a;
+  padding: 10px 0;
+  margin: 7px 5px;
+  border-radius: 20px;
+  width: 40px;
+  height: 35px;
+  color: white;
+}
+
+.calc-row input.screen {
+  display: table;
+  width: 90%;
+  font-size: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  color: black;
+  overflow-y: auto;
+}
+
+.calc-row button.zero {
+  width: 90px;
+}
+
+.calc-row button.calcOperation {
+  background-color: #ffb326;
+}
+
+.calc-row button.calcTop {
+  background-color: #b0b0b0;
+}
+
+.quadraticAnswer {
+  font-weight: normal;
+  resize: none;
+  overflow: auto;
+  width: 200px;
+  height: 40px;
+  white-space: nowrap;
+}
+
+.home-image {
+  width: 30%;
+  margin: auto;
+  margin-top: -66px;
+  float: left;
+}
+
+.home-container {
+  margin-top: 4%;
+  padding: 2% 15%;
+}
+
+table.constant-table {
+  width: 90%;
+  border: 1px solid black;
+  text-align: center;
+  margin-top: 10%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.constant-table {
+  border: 1px solid black;
+}
+
+.trivia-image{
+  width: 200px;
+  float: left;
+}
+
+.trivia-container{
+position: relative;
+margin-top:3%;
+margin-left:20%;
+}
+
+.trivia-question1{
+  width: 80%;
+  margin-top: 20px;;
+}
+
+.quadratic-section{
+
+}

@@ -591,6 +591,12 @@ margin-left:20%;
   margin-top:7%;
   font-size: 2vw;
 }
+
+.home-footer{
+  margin-top: 2%;
+  position: relative;
+  bottom: 100px;
+}
   @media (max-height: 30em) {
     .home-welcome{
       font-family: 'Roboto', sans-serif;
@@ -598,5 +604,11 @@ margin-left:20%;
       color: white;
       margin-top:2%;
       font-size: 2vw;
+    }
+
+    .home-footer{
+      margin-top: 2%;
+      position: relative;
+      bottom: 30px;
     }
   }

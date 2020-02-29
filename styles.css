@@ -590,7 +590,7 @@ margin-left:20%;
   font-size: 2vw;
 }
 
-@media (max-height: 500px) {
+@media (max-height: 30em) {
   .home-welcome{
     font-family: 'Roboto', sans-serif;
     text-align: center;

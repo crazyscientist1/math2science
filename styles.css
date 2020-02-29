@@ -542,6 +542,7 @@ td {
   margin: auto;
   margin-top: -66px;
   float: left;
+  margin-right: 5%;
 }
 
 .home-container {
@@ -586,17 +587,16 @@ margin-left:20%;
 .home-welcome{
   font-family: 'Roboto', sans-serif;
   text-align: center;
-  color: white;margin-top:7%;
+  color: white;
+  margin-top:7%;
   font-size: 2vw;
 }
-
-@media (max-height: 30em) {
-  .home-welcome{
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-    color: white;
-    margin-top:2%;
-    font-size: 2vw;
+  @media (max-height: 30em) {
+    .home-welcome{
+      font-family: 'Roboto', sans-serif;
+      text-align: center;
+      color: white;
+      margin-top:2%;
+      font-size: 2vw;
+    }
   }
-}
-

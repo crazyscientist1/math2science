@@ -594,8 +594,6 @@ margin-left:20%;
 
 .home-footer{
   margin-top: 2%;
-  position: relative;
-  bottom: 100px;
 }
   @media (max-height: 30em) {
     .home-welcome{
@@ -609,6 +607,6 @@ margin-left:20%;
     .home-footer{
       margin-top: 2%;
       position: relative;
-      bottom: 30px;
+      bottom: 40px;
     }
   }

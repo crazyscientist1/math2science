@@ -590,3 +590,13 @@ margin-left:20%;
   font-size: 2vw;
 }
 
+@media only screen and (max-height: 300px) {
+  .home-welcome{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: white;
+    margin-top:2%;
+    font-size: 2vw;
+  }
+}
+

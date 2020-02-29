@@ -582,3 +582,15 @@ margin-left:20%;
 .quadratic-section{
 
 }
+
+.home-welcome{
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  color: white;margin-top:7%;
+  font-size: 2vw;
+}
+@media only screen and (max-height: 300px) {
+  .home-welcome{
+    margin-top: 1%;
+  }
+}

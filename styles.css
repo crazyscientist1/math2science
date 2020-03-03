@@ -596,7 +596,7 @@ margin-left:20%;
   margin-top: 2%;
 
 }
-  @media (max-height: 30em) {
+  @media (max-height: 400px) {
     .home-welcome{
       font-family: 'Roboto', sans-serif;
       text-align: center;

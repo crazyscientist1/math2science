@@ -609,4 +609,8 @@ margin-left:20%;
       position: relative;
       bottom: 40px;
     }
+    
+    html{
+      transform: rotate(90deg);
+    }
   }

@@ -596,7 +596,15 @@ margin-left:20%;
   margin-top: 2%;
 
 }
-  @media (max-height: 400px) {
+
+.home-text{
+   width:100%;
+   padding: 2%;
+   font-size: 1.5vw;
+   color: white;
+   font-family: 'Roboto Condensed', sans-serif;
+}
+  @media (max-height: 30em) {
     .home-welcome{
       font-family: 'Roboto', sans-serif;
       text-align: center;
@@ -611,5 +619,9 @@ margin-left:20%;
       position: relative;
       bottom: 35px;
     }
+    .home-text{
+      padding: -2%;
+    }
+
 
   }

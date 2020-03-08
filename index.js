@@ -1,3 +1,29 @@
+// The MIT License (MIT)
+//
+// Copyright (c) 2011-2018 Twitter, Inc.
+// Copyright (c) 2011-2018 The Bootstrap Authors
+//
+// Permission is hereby granted, free of charge, to any person obtaining a copy
+// of this software and associated documentation files (the "Software"), to deal
+// in the Software without restriction, including without limitation the rights
+// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+// copies of the Software, and to permit persons to whom the Software is
+// furnished to do so, subject to the following conditions:
+//
+// The above copyright notice and this permission notice shall be included in
+// all copies or substantial portions of the Software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+// THE SOFTWARE.
+
+
+
+
 //default values
 document.getElementById("home").style.display = "block";
 document.getElementById("calculator").style.display = "none";
@@ -22,6 +48,13 @@ document.querySelector('.AvogadroConst-section').style.display = "none";
 document.querySelector('.length-section').style.display = "none";
 document.querySelector('.mass-section').style.display = "none";
 document.querySelector('.volume-section').style.display = "none";
+
+document.querySelector('.main-nav-link1').style.color = "#ff3030";
+document.querySelector('.main-nav-link2').style.color = "white";
+document.querySelector('.main-nav-link3').style.color = "white";
+document.querySelector('.main-nav-link4').style.color = "white";
+document.querySelector('.main-nav-link5').style.color = "white";
+document.querySelector('.main-nav-link6').style.color = "white";
 
 
 
@@ -48,6 +81,15 @@ function homeClick() {
   document.querySelector('.length-section').style.display = "none";
   document.querySelector('.mass-section').style.display = "none";
   document.querySelector('.volume-section').style.display = "none";
+  document.querySelector('.main-nav-link1').style.color = "black";
+
+
+  document.querySelector('.main-nav-link1').style.color = "#ff3030";
+  document.querySelector('.main-nav-link2').style.color = "white";
+  document.querySelector('.main-nav-link3').style.color = "white";
+  document.querySelector('.main-nav-link4').style.color = "white";
+  document.querySelector('.main-nav-link5').style.color = "white";
+  document.querySelector('.main-nav-link6').style.color = "white";
 
 
   ounce = 0;
@@ -178,6 +220,13 @@ function calculatorClick() {
   document.querySelector('.mass-section').style.display = "none";
   document.querySelector('.volume-section').style.display = "none";
 
+  document.querySelector('.main-nav-link1').style.color = "white";
+  document.querySelector('.main-nav-link2').style.color = "white";
+  document.querySelector('.main-nav-link3').style.color = "white";
+  document.querySelector('.main-nav-link4').style.color = "#ff3030";
+  document.querySelector('.main-nav-link5').style.color = "white";
+  document.querySelector('.main-nav-link6').style.color = "white";
+
 
 
   ounce = 0;
@@ -302,6 +351,13 @@ function formulasClick() {
   document.querySelector('.length-section').style.display = "none";
   document.querySelector('.mass-section').style.display = "none";
   document.querySelector('.volume-section').style.display = "none";
+
+  document.querySelector('.main-nav-link1').style.color = "white";
+  document.querySelector('.main-nav-link2').style.color = "#ff3030";
+  document.querySelector('.main-nav-link3').style.color = "white";
+  document.querySelector('.main-nav-link4').style.color = "white";
+  document.querySelector('.main-nav-link5').style.color = "white";
+  document.querySelector('.main-nav-link6').style.color = "white";
 
 
 
@@ -433,6 +489,13 @@ function periodicTableClick() {
   document.querySelector('.mass-section').style.display = "none";
   document.querySelector('.volume-section').style.display = "none";
 
+  document.querySelector('.main-nav-link1').style.color = "white";
+  document.querySelector('.main-nav-link2').style.color = "white";
+  document.querySelector('.main-nav-link3').style.color = "#ff3030";
+  document.querySelector('.main-nav-link4').style.color = "white";
+  document.querySelector('.main-nav-link5').style.color = "white";
+  document.querySelector('.main-nav-link6').style.color = "white";
+
 
 
   ounce = 0;
@@ -563,6 +626,13 @@ function aboutMeClick() {
   document.querySelector('.mass-section').style.display = "none";
   document.querySelector('.volume-section').style.display = "none";
 
+  document.querySelector('.main-nav-link1').style.color = "white";
+  document.querySelector('.main-nav-link2').style.color = "white";
+  document.querySelector('.main-nav-link3').style.color = "white";
+  document.querySelector('.main-nav-link4').style.color = "white";
+  document.querySelector('.main-nav-link5').style.color = "white";
+  document.querySelector('.main-nav-link6').style.color = "#ff3030";
+
 
 
   ounce = 0;
@@ -692,6 +762,13 @@ function questionsClick() {
   document.querySelector('.length-section').style.display = "none";
   document.querySelector('.mass-section').style.display = "none";
   document.querySelector('.volume-section').style.display = "none";
+
+  document.querySelector('.main-nav-link1').style.color = "white";
+  document.querySelector('.main-nav-link2').style.color = "white";
+  document.querySelector('.main-nav-link3').style.color = "white";
+  document.querySelector('.main-nav-link4').style.color = "white";
+  document.querySelector('.main-nav-link5').style.color = "#ff3030";
+  document.querySelector('.main-nav-link6').style.color = "white";
 
 
 
@@ -4398,7 +4475,7 @@ function quadraticEnter() {
   if (4 * aVal * cVal > bVal * bVal) {
     document.querySelector('.quadraticAnswer').value = "There is no solution";
   } else {
-    document.querySelector('.quadraticAnswer').value = "x-intercepts of this equation are: " + ((-1 * bVal) + Math.sqrt(bVal * bVal - 4 * aVal * cVal)) / 2 * aVal + " and " + ((-1 * bVal) - Math.sqrt(bVal * bVal - 4 * aVal * cVal)) / 2 * aVal + ". This can also be written as (x +  " + -(((-1 * bVal) + Math.sqrt(bVal * bVal - 4 * aVal * cVal)) / 2 * aVal) + ")(x +  " + -(((-1 * bVal) - Math.sqrt(bVal * bVal - 4 * aVal * cVal)) / 2 * aVal) + ") = 0.  ";
+    document.querySelector('.quadraticAnswer').value = "x-intercepts of this equation are: " + ((-1 * bVal) + Math.sqrt(bVal * bVal - 4 * aVal * cVal)) / (2*aVal) + " and " + ((-1 * bVal) - Math.sqrt(bVal * bVal - 4 * aVal * cVal)) / (2 * aVal) + ". This can also be written as (x +  " + -(((-1 * bVal) + Math.sqrt(bVal * bVal - 4 * aVal * cVal)) / 2 * aVal) + ")(x +  " + -(((-1 * bVal) - Math.sqrt(bVal * bVal - 4 * aVal * cVal)) / 2 * aVal) + ") = 0.  ";
   }
 
 }

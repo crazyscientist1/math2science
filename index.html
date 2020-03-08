@@ -1,4 +1,28 @@
 <!DOCTYPE html>
+
+<!-- The MIT License (MIT)
+
+Copyright (c) 2011-2018 Twitter, Inc.
+Copyright (c) 2011-2018 The Bootstrap Authors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE. -->
+
 <html lang="en" dir="ltr">
 
 <head>
@@ -14,26 +38,28 @@
   <!-- our fonts -->
   <link href="https://fonts.googleapis.com/css?family=Abel|Fredoka+One|Passion+One:400,700,900|Roboto+Condensed|Roboto:400,500,700,900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Arvo:700|Montserrat|Patrick+Hand&display=swap" rel="stylesheet">
-</head>
 
+</head>
 <body>
 
   <nav class="navbar-expand-lg main-navbar navbar navbar-expand-lg ">
     <a style="margin-left: 3%;" class="navbar-brand text-light" href="#">Math2Science</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-        <i style="color:white;"class="fas fa-angle-down"></i>
+        <img style="width:25px;"src="down-arrow3.png" alt="">
     </button>
     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
       <ul class="navbar-nav ml-auto text-light">
-        <li class="main-navbar-item1 nav-item" onclick="homeClick()"><a class="nav-link">Home</a></li>
-        <li class="main-navbar-item3 nav-item" onclick="formulasClick()"><a class="nav-link">Formulas</a></li>
-        <li class="main-navbar-item4 nav-item" onclick="periodicTableClick()"><a class="nav-link">Periodic Table</a></li>
-        <li class="main-navbar-item2 nav-item" onclick="calculatorClick()"><a class="nav-link">Calculator</a></li>
-        <li class="main-navbar-item5 nav-item" onclick="questionsClick()"><a class="nav-link">Trivia</a></li>
-        <li class="main-navbar-item6 nav-item " onclick="aboutMeClick()"><a class="nav-link">About Me</a></li>
+        <li style="font-size: 1.1rem;"class="main-navbar-item1 nav-item" onclick="homeClick()"><a class="main-nav-link1 nav-link">Home</a></li>
+        <li style="font-size: 1.1rem;"class="main-navbar-item3 nav-item" onclick="formulasClick()"><a class="main-nav-link2 nav-link">Formulas</a></li>
+        <li style="font-size: 1.1rem;"class="main-navbar-item4 nav-item" onclick="periodicTableClick()"><a class="main-nav-link3 nav-link">Periodic Table</a></li>
+        <li style="font-size: 1.1rem;"class="main-navbar-item2 nav-item" onclick="calculatorClick()"><a class="main-nav-link4 nav-link">Calculator</a></li>
+        <li style="font-size: 1.1rem;"class="main-navbar-item5 nav-item" onclick="questionsClick()"><a class="main-nav-link5 nav-link">Trivia</a></li>
+        <li style="font-size: 1.1rem;"class="main-navbar-item6 nav-item " onclick="aboutMeClick()"><a class="main-nav-link6 nav-link">About Me</a></li>
       </ul>
     </div>
   </nav>
+
+  <p class="navbar-text-down-arrow"> Click arrow to show/hide the navbar</p>
 
 
   <section id="home">
@@ -102,9 +128,11 @@
   </section>
 
   <section id="formulas">
+
+
     <nav class="side-navbar navbar navbar-expand-lg navbar-dark">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+          <img style="width:20px;"src="down-arrow3.png" alt="">
       </button>
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
         <ul class="side-navlist navbar-nav nav-fill w-100">
@@ -154,7 +182,7 @@
 
     <div class="length-section">
 
-      <div style="width:20%; height: 66px;position: absolute;left:20%;top: 30%;" class="length-container1">
+      <div class="length-container1">
         <input style="float:right;width:100%; height: 100%;" type="number" name="" value="" class="length-input">
         <select style="width:100%;height: 50%;" class="length-select1" name="">
           <option value="1">inches</option>
@@ -167,7 +195,7 @@
         </select>
       </div>
 
-      <div style="width:20%; height: 66px;position: absolute;left:45%;top: 30%;" class="length-container2">
+      <div class="length-container2">
         <input style="float:right;width:100%; height: 100%;" type="" name="" value="" class="length-output" disabled>
         <select style="width:100%;height: 50%;" class="length-select2" name="">
           <option value="1">inches</option>
@@ -179,14 +207,14 @@
           <option value="7">kilometer</option>
         </select>
       </div>
-      <h1 style="position: absolute; left: 41%; top: 30%;color:white;">=</h1>
-      <button style="position: absolute;right: 22%;top: 33%;height:10%;width:10%;" type="button" onclick="lengthEnter()" class="btn btn-outline-light">Enter</button>
+      <h1 class="conv-length-eql">=</h1>
+      <button type="button" onclick="lengthEnter()" class=" conv-length-enter btn btn-outline-light">Enter</button>
     </div>
 
     <div class="mass-section">
 
 
-      <div style="width:20%; height: 66px;position: absolute;left:20%;top: 30%;" class="mass-container1">
+      <div class="length-container1">
         <input style="float:right;width:100%; height: 100%;" type="number" name="" value="" class="mass-input">
         <select style="width:100%;height: 50%;" class="mass-select1" name="">
           <option value="1">ounce</option>
@@ -197,7 +225,7 @@
         </select>
       </div>
 
-      <div style="width:20%; height: 66px;position: absolute;left:45%;top: 30%;" class="mass-container2">
+      <div class="length-container2">
         <input style="float:right;width:100%; height: 100%;" type="" name="" value="" class="mass-output" disabled>
         <select style="width:100%;height: 50%;" class="mass-select2" name="">
           <option value="1">ounce</option>
@@ -207,8 +235,8 @@
           <option value="5">kilogram</option>
         </select>
       </div>
-      <h1 style="position: absolute; left: 41%; top: 30%;color:white;">=</h1>
-      <button style="position: absolute;right: 22%;top: 33%;height:10%;width:10%;" type="button" onclick="massEnter()" class="btn btn-outline-light">Enter</button>
+      <h1 class="conv-length-eql">=</h1>
+      <button type="button" onclick="massEnter()" class="conv-length-enter btn btn-outline-light">Enter</button>
     </div>
 
 
@@ -216,7 +244,7 @@
     <div class="volume-section">
 
 
-      <div style="width:20%; height: 66px;position: absolute;left:20%;top: 30%;" class="volume-container1">
+      <div class="length-container1">
         <input style="float:right;width:100%; height: 100%;" type="number" name="" value="" class="volume-input">
         <select style="width:100%;height: 50%;" class="volume-select1" name="">
           <option value="1">US liquid gallon</option>
@@ -234,7 +262,7 @@
         </select>
       </div>
 
-      <div style="width:20%; height: 66px;position: absolute;left:45%;top: 30%;" class="volume-container2">
+      <div class="length-container2">
         <input style="float:right;width:100%; height: 100%;" type="" name="" value="" class="volume-output" disabled>
         <select style="width:100%;height: 50%;" class="volume-select2" name="">
           <option value="1">US liquid gallon</option>
@@ -251,8 +279,8 @@
           <option value="12">Cubic inch</option>
         </select>
       </div>
-      <h1 style="position: absolute; left: 41%; top: 30%;color:white;">=</h1>
-      <button style="position: absolute;right: 22%;top: 33%;height:10%;width:10%;" type="button" onclick="volumeEnter()" class="btn btn-outline-light">Enter</button>
+      <h1 class="conv-length-enter">=</h1>
+      <button type="button" onclick="volumeEnter()" class="conv-length-enter btn btn-outline-light">Enter</button>
     </div>
 
 
@@ -287,19 +315,19 @@
     <div class="quadratics-section" style="">
       <h2 style="margin-top: 3%;">Quadratic Solver</h3>
         <p style="width:52%;margin-left: auto;margin-right: auto;margin-left: auto;margin-right: auto;position:relative;top:280px;">The formula for the quadratic equation is: ax<sup>2</sup> + bx + c = 0. This calculator is able to calculate the x
-          intercepts of the quadratic equation. Input the values a b and c.</p>
-        <div style="position: absolute; left:3%;" class="">
-          <input style="width:10%;height:40px;margin: 4%;font-size: 2rem" class="quadraticA" placeholder="a" type="number" name="" value="">
-          <input style="width:10%;height:40px;margin: 4%;font-size: 2rem" class="quadraticB" placeholder="b" type="number" name="" value="">
-          <input style="width:10%;height:40px;margin: 4%;font-size: 2rem" class="quadraticC" placeholder="c" type="number" name="" value="">
-          <h5 style="position:absolute;left:41%;top:25%;">2</h5>
-          <h2 style="position:absolute;left:38%;top:8%;">x +</h2>
-          <h2 style="position:absolute;left:56%;top:8%;">x + </h2>
-          <h2 style="position:absolute;left:75%;top:8%;">= 0 </h2>
-        </div>
+          intercepts of the quadratic equation. Input the values a, b, and c. To see your result hit the enter button!</p>
+        <div class="quadratic-container-style">
+          <input class="quadraticA quadratic-val-style" placeholder="a" type="number" name="" value="">
+          <input class="quadraticB quadratic-val-style" placeholder="b" type="number" name="" value="">
+          <input class="quadraticC quadratic-val-style" placeholder="c" type="number" name="" value="">
 
-        <textarea style="margin-top:10%;width:50%;" placeholder="Solution:" class="quadraticAnswer" name="name" disabled></textarea>
-        <button style="position:absolute;top: 47.5%;left:76%;height:50px;width:100px;" onclick="quadraticEnter()" type="button" class="btn btn-outline-light">Enter</button>
+          <h2 class="quadratic-text2">x <sup>2</sup>+</h2>
+          <h2 class="quadratic-text3">x + </h2>
+          <h2 class="quadratic-text4">= 0 </h2>
+        </div>
+        <button onclick="quadraticEnter()" type="button" class="quadratic-enter-style btn btn-outline-light">Enter</button><br>
+        <textarea placeholder="Solution:" class="quadraticAnswer" name="name" disabled></textarea>
+
 
     </div>
 
@@ -337,12 +365,12 @@
       </div>
       <div class="row">
         <div class="col-lg-6">
-          <h3 style="margin-left:20%;">Formulas</h3>
-          <p style="width: 70%; margin-left: auto; margin-right: auto;font-size: 1.2rem;margin-left:25%;">The formula for perimeter is: <strong><em>2(l + w)</em></strong> or <br><strong><em>2 &times; L + 2 &times;W</em></strong> . The formula for
+          <h3 class="area-perimeter-h3F">Formulas</h3>
+          <p class="what-rectangle-pF">The formula for perimeter is: <strong><em>2(l + w)</em></strong> or <br><strong><em>2 &times; L + 2 &times;W</em></strong> . The formula for
             area is <strong><em>L &times; W</em></strong>.</p>
         </div>
         <div class="col-lg-6">
-          <h3 style="margin-right:15%;">
+          <h3 class="area-perimeter-h3">
             What is a Rectangle?
           </h3>
           <p class="what-rectangle-p">A plane figure with four straight sides and four right angles, especially one with unequal adjacent sides, in contrast to a square.-Oxford Dictionary</p>
@@ -387,12 +415,12 @@
 
       <div class="row">
         <div class="col-lg-6">
-          <h3 style="margin-left:20%;">Formulas</h3>
-          <p style="width: 70%; margin-left: auto; margin-right: auto;font-size: 1.2rem;margin-left:25%;">The formula for circumference is: <strong><em>2&#120529;r</em></strong> . The formula for area is: <strong><em>&#120529;r&#178;</em></strong>.
+          <h3 class="area-perimeter-h3F">Formulas</h3>
+          <p class="what-rectangle-pF">The formula for circumference is: <strong><em>2&#120529;r</em></strong> . The formula for area is: <strong><em>&#120529;r&#178;</em></strong>.
           </p>
         </div>
         <div class="col-lg-6">
-          <h3 style="margin-right:15%;">
+          <h3 class="area-perimeter-h3">
             What is a Circle?
           </h3>
           <p class="what-rectangle-p">a round plane figure whose boundary (the circumference) consists of points equidistant from a fixed point (the center).-Oxford Dictionary</p>
@@ -437,11 +465,11 @@
       </div>
       <div class="row">
         <div class="col-lg-6">
-          <h3 style="margin-left:20%;">Formulas</h3>
-          <p style="width: 70%; margin-left: auto; margin-right: auto;font-size: 1.2rem;margin-left:25%;">The formula for area is: <br><strong><em>&#189;(base1 + base2)h</em></strong></p>
+          <h3 class="area-perimeter-h3F">Formulas</h3>
+          <p class="what-rectangle-pF">The formula for area is: <br><strong><em>&#189;(base1 + base2)h</em></strong></p>
         </div>
         <div class="col-lg-6">
-          <h3 style="margin-right:15%;">
+          <h3 class="area-perimeter-h3">
             What is a Trapezoid?
           </h3>
           <p class="what-rectangle-p">A quadrilateral with only one pair of parallel sides.-Oxford Dictionary</p>
@@ -488,13 +516,13 @@
       </div>
       <div class="row">
         <div class="col-lg-6">
-          <h3 style="margin-left:20%;">Formulas</h3>
-          <p style="width: 70%; margin-left: auto; margin-right: auto;font-size: 1.2rem;margin-left:25%;">The formula for surface area is: <strong><em>Surface Area = (2 &times; l &times; w)+(2 &times; l &times; h)+(2 &times; w &times;
+          <h3 class="area-perimeter-h3F">Formulas</h3>
+          <p class="what-rectangle-pF">The formula for surface area is: <strong><em>Surface Area = (2 &times; l &times; w)+(2 &times; l &times; h)+(2 &times; w &times;
                 h)</em></strong> . The formula for
             volume is <strong><em>Volume = l &times; w &times; h</em></strong>.</p>
         </div>
         <div class="col-lg-6">
-          <h3 style="margin-right:15%;">
+          <h3 class="area-perimeter-h3">
             What is a Rectangular Prism?
           </h3>
           <p class="what-rectangle-p">A three dimentional figure that has has six rectangular shaped sides.</p>
@@ -538,13 +566,13 @@
 
       <div class="row">
         <div class="col-lg-6">
-          <h3 style="margin-left:20%;">Formulas</h3>
-          <p style="width: 70%; margin-left: auto; margin-right: auto;font-size: 1.2rem;margin-left:25%;">The formula for surface area is: <strong><em>Surface Area = 2 &times; &#120529; &times; r &times; h + 2 &times; &#120529; &times; r
+          <h3 class="area-perimeter-h3F">Formulas</h3>
+          <p class="what-rectangle-pF">The formula for surface area is: <strong><em>Surface Area = 2 &times; &#120529; &times; r &times; h + 2 &times; &#120529; &times; r
                 &#178;</em></strong>. The formula for volume is: <strong>Volume = &#120529; r &#178; </strong>
           </p>
         </div>
         <div class="col-lg-6">
-          <h3 style="margin-right:15%;">
+          <h3 class="area-perimeter-h3">
             What is a Cylinder?
           </h3>
           <p class="what-rectangle-p"> A solid geometric figure with straight parallel sides and a circular or oval cross section.-Oxford Dictionary</p>
@@ -587,13 +615,13 @@
 
       <div class="row">
         <div class="col-lg-6">
-          <h3 style="margin-left:20%;">Formulas</h3>
-          <p style="width: 70%; margin-left: auto; margin-right: auto;font-size: 1.2rem;margin-left:25%;">The formula for surface area is: <strong><em>Surface Area = &#120529; &times; r &times; (r + <bold>&#8730;</bold>(h&#178; +
+          <h3 class="area-perimeter-h3F">Formulas</h3>
+          <p class="what-rectangle-pF">The formula for surface area is: <strong><em>Surface Area = &#120529; &times; r &times; (r + <bold>&#8730;</bold>(h&#178; +
                 r&#178;))</em></strong>. The formula for volume is: <strong>Volume = &#120529; r &#178; &times; (h / 3)</strong>
           </p>
         </div>
         <div class="col-lg-6">
-          <h3 style="margin-right:15%;">
+          <h3 class="area-perimeter-h3">
             What is a Cone?
           </h3>
           <p class="what-rectangle-p"> A solid or hollow object which tapers from a circular or roughly circular base to a point.-Oxford Dictionary</p>
@@ -634,13 +662,13 @@
 
       <div class="row">
         <div class="col-lg-6">
-          <h3 style="margin-left:20%;">Formulas</h3>
-          <p style="width: 70%; margin-left: auto; margin-right: auto;font-size: 1.2rem;margin-left:25%;">The formula for surface area is: <strong><em>surface area = 4 &times; &#120529; r&#178;</em></strong> . The formula for volume is:
+          <h3 class="area-perimeter-h3F">Formulas</h3>
+          <p class="what-rectangle-pF">The formula for surface area is: <strong><em>surface area = 4 &times; &#120529; r&#178;</em></strong> . The formula for volume is:
             <br><strong><em> volume = (4/3) &times; &#120529; r&#179;</em></strong>.
           </p>
         </div>
         <div class="col-lg-6">
-          <h3 style="margin-right:15%;">
+          <h3 class="area-perimeter-h3">
             What is a Sphere?
           </h3>
           <p class="what-rectangle-p">a round solid figure, or its surface, with every point on its surface equidistant from its center.-Oxford Dictionary</p>
@@ -979,7 +1007,7 @@
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  <script src="https://kit.fontawesome.com/396bb1a039.js" crossorigin="anonymous"></script>
+
 
 
   <!-- our javascript link -->

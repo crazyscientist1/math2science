@@ -1,4 +1,30 @@
 /* get by tag */
+
+/* The MIT License (MIT)
+
+Copyright (c) 2011-2018 Twitter, Inc.
+Copyright (c) 2011-2018 The Bootstrap Authors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE. */
+
+
+
 body {
   text-align: center;
   background-color: #2a6fc7;
@@ -47,7 +73,6 @@ p {
 }
 
 .side-navbar {
-  height: 30px;
   background-color: #3988bf;
 }
 
@@ -370,6 +395,8 @@ td {
   margin-right: 20%;
 }
 
+
+
 .cylinder-image {
   width: 20%;
   margin-top: 2%;
@@ -456,9 +483,8 @@ td {
 }
 
 .element-periodic-data {
-  position: absolute;
-  left: 440px;
-  top: 160px;
+margin-top: -30%;
+margin-right: 10%;
 }
 
 @import url(https://fonts.googleapis.com/css?family=Droid+Sans+Mono|Pacifico|Oxygen);
@@ -535,7 +561,38 @@ td {
   width: 200px;
   height: 40px;
   white-space: nowrap;
+  margin-top:10%;
+  width:50%;
 }
+
+.quadratic-val-style{
+  width:10%;
+  height:40px;
+  margin: 4%;
+  font-size: 2rem;
+}
+
+.quadratic-text1{
+position:absolute;
+left:41%;
+top:25%;
+}
+.quadratic-text2{
+  position:absolute;
+  left:38%;
+  top:8%;
+}
+.quadratic-text3{
+  position:absolute;
+  left:56%;
+  top:8%;
+}
+.quadratic-text4{
+  position:absolute;
+  left:75%;
+  top:8%;
+}
+
 
 .home-image {
   width: 30%;
@@ -604,6 +661,84 @@ margin-left:20%;
    color: white;
    font-family: 'Roboto Condensed', sans-serif;
 }
+
+.length-container1{
+  width:20%;
+  height: 66px;
+  position: absolute;
+  left:20%;
+  top: 30%;
+}
+
+.length-container2{
+  width:20%;
+  height: 66px;
+  position: absolute;
+  left:45%;
+  top: 30%;"
+}
+
+.conv-length-eql{
+  position: absolute;
+  left: 41%;
+  top: 30%;
+  color:white;
+}
+
+.conv-length-enter{
+   position: absolute;
+   right: 22%;
+   top: 33%;
+   height:10%;
+   width:10%;
+}
+
+.area-perimeter-h3{
+  margin-right:15%;
+}
+
+.area-perimeter-h3F{
+  margin-left:20%;
+}
+
+.what-rectangle-p {
+  width: 80%;
+  font-size: 1.1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.what-rectangle-pF{
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.2rem;
+  margin-left:25%;
+}
+
+.quadratic-enter-style{
+  position:absolute;
+  top: 47.5%;
+  left:76%;
+  height:50px;
+  width:100px;
+}
+
+.quadratic-container-style{
+   position: absolute;
+   left:3%;
+}
+
+.navbar-text-down-arrow{
+  font-size: 0.625rem;
+  width: 17%;
+  position: absolute;
+  top: 13px;
+  left: 600px;
+  display: none;
+}
+
+
   @media (max-height: 30em) {
     .home-welcome{
       font-family: 'Roboto', sans-serif;
@@ -623,5 +758,136 @@ margin-left:20%;
       margin-top: -25px;
     }
 
+    .length-container1{
+      width:20%;
+      height: 66px;
+      position: static;
+      display: inline-block;
+      margin-left: 1%;
+      margin-top: 4%;
+    }
+
+    .length-container2{
+      width:20%;
+      height: 66px;
+      position: static;
+      display: inline-block;
+      margin-left: 10%;
+      margin-top: -20%;
+    }
+    .conv-length-eql{
+      position: static;
+      margin-top: -10%;
+      color:white;
+    }
+    .conv-length-enter{
+      position: static;
+      margin-top: -14%;
+      margin-left: 64%;
+    }
+
+    .circle-image {
+      width: 30%;
+      margin-top: 2%;
+      margin-right: 2%;
+    }
+
+    .what-rectangle-p {
+      width: 80%;
+      font-size: 1.1rem;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .area-perimeter-h3{
+      margin-left:auto;
+      margin-right: auto;
+    }
+    .area-perimeter-h3F{
+      margin-left:auto;
+      margin-right: auto;
+    }
+
+    .what-rectangle-pF{
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .rectangle-image {
+      width: 40%;
+      margin-top: 3%;
+      margin-right: 0;
+    }
+    .trapezoid-image {
+      width: 40%;
+      margin-top: 3%;
+      margin-right: 0;
+    }
+    .cylinder-image {
+      width: 20%;
+      margin-top: 2%;
+      margin-right: 0%;
+    }
+    .cone-image {
+      width: 30%;
+      margin-right: 0;
+      margin-top: 30px;
+    }
+    .sphere-image {
+      margin-right: 0;
+    }
+    .quadratic-text1{
+    position:absolute;
+    left:41%;
+    top:25%;
+    }
+    .quadratic-text2{
+      position:absolute;
+      left:37%;
+      top:8%;
+      font-size: 2rem;
+    }
+    .quadratic-text3{
+      position:absolute;
+      left:56%;
+      top:8%;
+      font-size: 2rem;
+    }
+    .quadratic-text4{
+      position:absolute;
+      left:75%;
+      top:8%;
+      font-size: 2rem;
+    }
+    .quadratic-container-style{
+      margin-top:-10%;
+    }
+    .quadratic-enter-style{
+      position:static;
+      height:50px;
+      width:100px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 3%;
+    }
+
+    .quadraticAnswer {
+      font-weight: normal;
+      resize: none;
+      overflow: auto;
+      width: 200px;
+      height: 40px;
+      white-space: nowrap;
+      margin-top:2%;
+      width:50%;
+    }
+
+    .element-periodic-data {
+    margin-top: -50%;
+    margin-right: 10%;
+    }
+
+    .navbar-text-down-arrow{
+      display: block;
+    }
 
   }
